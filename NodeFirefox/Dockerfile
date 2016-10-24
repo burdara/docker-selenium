@@ -1,4 +1,4 @@
-FROM selenium/node-base:2.44.0
+FROM selenium/node-firefox:2.44.0
 MAINTAINER Selenium <selenium-developers@googlegroups.com>
 
 USER root
@@ -6,10 +6,10 @@ USER root
 #=========
 # Firefox
 #=========
-RUN wget -P /tmp ftp://ftp.mozilla.org/pub/firefox/releases/33.1.1/linux-x86_64/en-US/firefox-33.1.1.tar.bz2 \
-  && tar -xvjf /tmp/firefox-33.1.1.tar.bz2 -C /opt \
-  && ln -s -f /opt/firefox/firefox /usr/bin/firefox
-
+RUN wget -P /tmp/ https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/33.1.1/linux-x86_64/en-US/firefox-33.1.1.tar.bz2 \
+  && tar -xvjf /tmp/firefox-33.1.1.tar.bz2 -C /tmp/ \
+  && mv /tmp/firefox /opt/firefox33 \
+  && ln -s -f /opt/firefox33/firefox /usr/bin/firefox
 
 #========================
 # Selenium Configuration

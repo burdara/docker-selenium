@@ -1,4 +1,4 @@
-FROM selenium/node-chrome:2.44.0
+FROM burdara/node-chrome:2.44.0-stable
 #FROM selenium/node-*:2.44.0 Proper FROM attr will be applied throuh generate.sh
 
 USER root

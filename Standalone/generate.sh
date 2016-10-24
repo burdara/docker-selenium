@@ -1,13 +1,14 @@
 #!/bin/bash
-FOLDER=../$1
-BASE=$2
-BROWSER=$3
-VERSION=$4
+REPO=$1
+FOLDER=../$2
+BASE=$3
+BROWSER=$4
+VERSION=$5
 
 rm -rf $FOLDER
 mkdir -p $FOLDER
 
-echo FROM selenium/$BASE:$VERSION > $FOLDER/Dockerfile
+echo FROM $REPO/$BASE:$VERSION > $FOLDER/Dockerfile
 cat ./Dockerfile >> $FOLDER/Dockerfile
 
 cp ./entry_point.sh $FOLDER

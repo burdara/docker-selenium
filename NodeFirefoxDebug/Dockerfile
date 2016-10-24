@@ -1,4 +1,4 @@
-FROM selenium/node-firefox:2.44.0
+FROM burdara/node-firefox:2.44.0-33
 #FROM selenium/node-*:2.44.0 Proper FROM attr will be applied throuh generate.sh
 MAINTAINER Selenium <selenium-developers@googlegroups.com>
 

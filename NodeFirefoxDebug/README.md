@@ -4,7 +4,7 @@ _This image is only intended for development purposes!_ Runs a Selenium Grid Nod
 
 ## Dockerfile
 
-[`selenium/node-firefox-debug` Dockerfile](https://github.com/SeleniumHQ/docker-selenium/blob/master/NodeFirefoxDebug/Dockerfile)
+[`selenium/node-firefox-debug` Dockerfile](https://github.com/SeleniumHQ/docker-selenium/blob/master/burdara/Dockerfile)
 
 ## How to use this image
 
